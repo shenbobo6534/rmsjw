@@ -58,4 +58,5 @@ public class UserServlet extends HttpServlet {
     }
     //修改管理员信息
     //禁用管理员
+    int Integer = 3;
 }
