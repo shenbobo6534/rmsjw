@@ -10,7 +10,7 @@
 <%@include file="left.jsp"%>
 <html>
 <head>
-    <title>商品列表</title>
+    <title>商品页面 商品列表</title>
     <style>
         /*#left{*/
             /*width: 30%;*/
@@ -19,9 +19,9 @@
             /*background-color: yellowgreen;*/
         /*}*/
         #right{
-            width: 70%;
+            width: 75%;
             float: right;
-            background-color: greenyellow;
+            /*background-color: greenyellow;*/
         }
         #se{
             width: 200px;
@@ -93,6 +93,7 @@
                     <td>
                         <button onclick="toType(this)">上/下架</button>
                         <button>修改</button>
+                        <button onclick="ss(this)">删除</button>
                     </td>
                 </tr>
             </c:forEach>
@@ -119,5 +120,9 @@
             }
         )
     }
+    //删除不了
+    $("button").click(function () {
+        $(this).parent().parent().remove();
+    })
 </script>
 </html>
